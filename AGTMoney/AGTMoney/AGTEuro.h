@@ -10,7 +10,7 @@
 
 @interface AGTEuro : NSObject
 
-@property (nonatomic) NSUInteger amount;
+//@property (nonatomic) NSUInteger amount;
 
 - (id) initWithAmount:(NSUInteger) amount;
 //- (NSUInteger) times:(NSUInteger) i;

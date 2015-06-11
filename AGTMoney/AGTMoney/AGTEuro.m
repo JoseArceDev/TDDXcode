@@ -9,8 +9,10 @@
 #import "AGTEuro.h"
 
 
-@interface AGTEuro()
+@interface AGTEuro(){
 
+    NSUInteger theAmount;
+}
 //@property (nonatomic) NSUInteger amount;
 
 @end
@@ -20,7 +22,7 @@
 - (id) initWithAmount:(NSUInteger) amount {
     
     if(self = [super init]){
-        _amount = amount;
+        theAmount = amount;
     }
     
     return self;
@@ -28,7 +30,6 @@
 
 /*
 - (NSUInteger) times:(NSUInteger) i {
-    
     return self.amount * i;
 }
 */
@@ -39,14 +40,20 @@
 }
 */
 
-
 - (AGTEuro *) times:(NSUInteger) i{
-    return [[AGTEuro alloc] initWithAmount: self.amount * i];
+    return [[AGTEuro alloc] initWithAmount: theAmount * i];
 }
 
+#pragma mark - Override 
 
 -(BOOL) isEqual:(id)object{
-    return [self amount] == [object amount];
+    return [self hash] == [object hash];
 }
+
+- (NSUInteger) hash{
+    return theAmount;
+}
+
+
 
 @end

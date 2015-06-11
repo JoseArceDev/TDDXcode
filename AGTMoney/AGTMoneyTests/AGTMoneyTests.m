@@ -12,6 +12,7 @@
 
 @interface AGTMoneyTests : XCTestCase
 
+
 @end
 
 @implementation AGTMoneyTests
@@ -24,9 +25,10 @@
     
     //NSUInteger resultado = [five times:2];
     
-    //AGTEuro *ten = [[AGTEuro alloc] initWithAmount:10];
+    AGTEuro *ten2 = [[AGTEuro alloc] initWithAmount:10];
     
-    XCTAssertEqual(ten.amount,10, @" Efectivamente es 10 €");
+    XCTAssertEqualObjects(ten,ten2, @" Efectivamente es 10 €");
+    //XCTAssertEqual(ten.amount,10, @" Efectivamente es 10 €");
     //XCTAssertEqual(five.amount,ten.amount, @" Efectivamente es 10 €");
     //XCTAssertEqual(resultado,ten.amount, @" Efectivamente es 10 €");
     //XCTAssertEqual(resultado,10, @" Efectivamente es 10 €");
@@ -37,13 +39,16 @@
     
     AGTEuro *case1 = [[AGTEuro alloc] initWithAmount:5];
     AGTEuro *case2 = [[AGTEuro alloc]initWithAmount:5];
+    AGTEuro *case3 = [[AGTEuro alloc]initWithAmount:5];
     
     XCTAssertTrue([case1 isEqual:case2],@" Los objetos son iguales ");
     
-    case2.amount = 10;
+    //case2.amount = 10;
     
-    XCTAssertFalse([case2 isEqual:case2], @" Los objetos no son iguales ");
+    XCTAssertFalse([case1 isEqual:case3], @" Los objetos no son iguales ");
     
 }
+
+
 
 @end
