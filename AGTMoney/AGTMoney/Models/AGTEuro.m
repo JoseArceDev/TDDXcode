@@ -50,7 +50,7 @@
     return [self hash] == [object hash];
 }
 
-- (NSUInteger) hash{
+- (NSUInteger) hash {
     return theAmount;
 }
 
