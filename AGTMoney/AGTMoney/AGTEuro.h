@@ -14,6 +14,7 @@
 
 - (id) initWithAmount:(NSUInteger) amount;
 //- (NSUInteger) times:(NSUInteger) i;
-- (void) times:(NSUInteger) i;
+//- (void) times:(NSUInteger) i;
+- (AGTEuro *) times:(NSUInteger) i;
 
 @end

@@ -15,9 +15,7 @@
 
 @end
 
-
 @implementation AGTEuro
-
 
 - (id) initWithAmount:(NSUInteger) amount {
     
@@ -35,8 +33,20 @@
 }
 */
 
+/*
 - (void) times:(NSUInteger) i {
     self.amount *= i;
+}
+*/
+
+
+- (AGTEuro *) times:(NSUInteger) i{
+    return [[AGTEuro alloc] initWithAmount: self.amount * i];
+}
+
+
+-(BOOL) isEqual:(id)object{
+    return [self amount] == [object amount];
 }
 
 @end
