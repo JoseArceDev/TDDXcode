@@ -14,6 +14,9 @@
 		ED6C0B631B29DC180091A262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6C0B621B29DC180091A262 /* Images.xcassets */; };
 		ED6C0B661B29DC180091A262 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6C0B641B29DC180091A262 /* LaunchScreen.xib */; };
 		ED6C0B721B29DC180091A262 /* AGTMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6C0B711B29DC180091A262 /* AGTMoneyTests.m */; };
+		ED6C0B7C1B29DE9F0091A262 /* AGTEuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6C0B7B1B29DE9F0091A262 /* AGTEuroTest.m */; };
+		ED6C0B7F1B29DFF70091A262 /* AGTEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6C0B7E1B29DFF70091A262 /* AGTEuro.m */; };
+		ED6C0B801B29DFF70091A262 /* AGTEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6C0B7E1B29DFF70091A262 /* AGTEuro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		ED6C0B6B1B29DC180091A262 /* AGTMoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGTMoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6C0B701B29DC180091A262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED6C0B711B29DC180091A262 /* AGTMoneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGTMoneyTests.m; sourceTree = "<group>"; };
+		ED6C0B7B1B29DE9F0091A262 /* AGTEuroTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEuroTest.m; sourceTree = "<group>"; };
+		ED6C0B7D1B29DFF70091A262 /* AGTEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTEuro.h; sourceTree = "<group>"; };
+		ED6C0B7E1B29DFF70091A262 /* AGTEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEuro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		ED6C0B491B29DC180091A262 = {
 			isa = PBXGroup;
 			children = (
+				ED6C0B7B1B29DE9F0091A262 /* AGTEuroTest.m */,
 				ED6C0B541B29DC180091A262 /* AGTMoney */,
 				ED6C0B6E1B29DC180091A262 /* AGTMoneyTests */,
 				ED6C0B531B29DC180091A262 /* Products */,
@@ -89,6 +96,8 @@
 				ED6C0B621B29DC180091A262 /* Images.xcassets */,
 				ED6C0B641B29DC180091A262 /* LaunchScreen.xib */,
 				ED6C0B551B29DC180091A262 /* Supporting Files */,
+				ED6C0B7D1B29DFF70091A262 /* AGTEuro.h */,
+				ED6C0B7E1B29DFF70091A262 /* AGTEuro.m */,
 			);
 			path = AGTMoney;
 			sourceTree = "<group>";
@@ -222,6 +231,7 @@
 				ED6C0B5E1B29DC180091A262 /* ViewController.m in Sources */,
 				ED6C0B5B1B29DC180091A262 /* AppDelegate.m in Sources */,
 				ED6C0B581B29DC180091A262 /* main.m in Sources */,
+				ED6C0B7F1B29DFF70091A262 /* AGTEuro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED6C0B721B29DC180091A262 /* AGTMoneyTests.m in Sources */,
+				ED6C0B801B29DFF70091A262 /* AGTEuro.m in Sources */,
+				ED6C0B7C1B29DE9F0091A262 /* AGTEuroTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "AGTEuro.h"
 
 @interface AGTMoneyTests : XCTestCase
 
@@ -15,26 +16,18 @@
 
 @implementation AGTMoneyTests
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void) testEuroMultiplier {
+    
+    // demostrar que 5€ * 2 = 10
+    AGTEuro *five = [[AGTEuro alloc] initWithAmount:5];
+    //NSUInteger resultado = [five times:2];
+    
+    AGTEuro *ten = [[AGTEuro alloc] initWithAmount:10];
+    
+    XCTAssertEqual(five.amount,ten.amount, @" Efectivamente es 10 €");
+    //XCTAssertEqual(resultado,ten.amount, @" Efectivamente es 10 €");
+    //XCTAssertEqual(resultado,10, @" Efectivamente es 10 €");
+    
 }
 
 @end
